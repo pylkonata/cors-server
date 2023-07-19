@@ -8,11 +8,8 @@ const port = process.env.PORT || 8080;
 corsProxy.createServer({
     originWhitelist: [
       'http://localhost:3000',
-      'http://localhost:5000',
-      'https://portfolio-ravenous.web.app',
-      'https://portfolio-ravenous.firebaseapp.com',
-      'https://test-my-api-endpoint.web.app',
-      'https://test-my-api-endpoint.firebaseapp.com'
+      'http://localhost:8080',
+      'https://cmpetmanager.github.io/CM-memory-seller/',
     ],
     requireHeader: ['origin', 'x-requested-with'],
     removeHeaders: ['cookie', 'cookie2']
